@@ -1,1 +1,48 @@
+#1).Write a program which contains one class named as Demo.Demo class contains two instance variables as no1 ,no2.
+#That class contains one class variable as Value.There are two instance methods of class as Fun and Gun which displays values of instance
+#variables.Initialise instance variable in init method by accepting the values from user.After creating the class create the two objects of Demo class as
+#Obj1 = Demo(11,21)
+#Obj2 = Demo(51,101)
+#Now call the instance methods as
+#Obj1.Fun()
+#Obj2.Fun()
+#Obj1.Gun()
+#Obj2.Gun()
 
+
+class Demo:
+    value=110
+    def __init__(self,i,j):
+        self.no1=i
+        self.no2=j
+        
+    def Fun(self):
+        return self.no1+self.no2
+        
+    def Gun(self):
+        return self.no1-self.no2
+
+
+def main():
+    print("value :",Demo.value)
+    obj1=Demo(11,21)
+    obj2=Demo(51,101)
+    print("value is:",obj1.value)
+    ret=obj1.Fun()
+    print("Addition is",ret)
+    ret=obj1.Gun()
+    print("Addition is",ret)
+    ret=obj2.Fun()
+    print("addition in",ret)
+    ret=obj2.Gun()
+    print("addition in",ret)
+if __name__== "__main__":
+     main()
+
+out/put-
+value : 110
+value is: 110
+Addition is 32
+Addition is -10
+addition in 152
+addition in -50
