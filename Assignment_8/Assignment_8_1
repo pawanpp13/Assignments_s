@@ -1,3 +1,26 @@
-#1)Design python application which creates two thread named as even and odd. Even
-thread will display first 10 even numbers and odd thread will display first 10 odd
-numbers.
+# 1.Design python application which creates two thread named as even and odd. Even thread will display first 10 even numbers and odd thread will display first 10 odd
+#numbers
+
+import threading 
+
+def Thread_even():
+    for i in range(0,11,1):
+        print("thread1 even number :",i)
+
+def Thread_odd():
+    for i in range(1,11,1):
+        print("Thread2 is odd number :",i)
+    
+def main():
+    
+    even_th = threading.Thread(target=Thread_even)
+    odd_th = threading.Thread(target=Thread_odd)
+
+    even_th.start()
+    odd_th.start()
+
+    even_th.join()
+    odd_th.join()
+
+if __name__ == "__main__":
+    main()
