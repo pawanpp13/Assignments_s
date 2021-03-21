@@ -11,3 +11,11 @@ def main():
     print(op.read())
 if __name__=="__main__":
     main()
+
+
+o/p
+enter the file name:demo
+data from file is:
+hey,hi! my name is pavan.
+
+>>> 
