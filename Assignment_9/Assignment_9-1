@@ -1,0 +1,10 @@
+1.Write a program which accepts file name from user and check whether that file exists in current directory or not.
+#Input : Demo.txt
+#Check whether Demo.txt exists or not.
+
+import pathlib
+file = pathlib.Path("demo.txt")
+if file.exists ():
+    print ("File exist")
+else:
+    print ("File not exist")
