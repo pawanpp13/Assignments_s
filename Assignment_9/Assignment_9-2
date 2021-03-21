@@ -1,0 +1,13 @@
+2. Write a program which accept file name from user and open that file and display the contents of that file on screen.
+Input : Demo.txt
+Display contents of Demo.txt on console.
+
+
+def main():
+    name=input('enter the file name :')
+    op=open(name,"r") #create file
+
+    print("data from file is : ")
+    print(op.read())
+if __name__=="__main__":
+    main()
