@@ -2,9 +2,15 @@
 #Input : Demo.txt
 #Check whether Demo.txt exists or not.
 
-import pathlib
-file = pathlib.Path("demo.txt")
-if file.exists ():
-    print ("File exist")
-else:
-    print ("File not exist")
+import os
+def main():
+
+    if os.path.exists('demo.txt'):
+        f=open('demo.txt')
+        print('file is opened')
+        f.close()
+    else:
+        print("file does not exist")
+
+if __name__=="__main__":
+    main()
