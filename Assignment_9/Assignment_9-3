@@ -2,3 +2,18 @@
 arguments.
 Input : ABC.txt
 Create new file as Demo.txt and copy contents of ABC.txt in Demo.txt
+
+
+
+def main():
+    
+    
+    with open("demo1","r") as f:
+        with open("copy_file", "w") as f1:
+            for line in f:
+                f1.write(line)
+            
+            
+            
+if __name__=="__main__":
+    main()
